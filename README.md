@@ -15,13 +15,7 @@
 ---
 
 ## 🛠️ Tech Stack
-![React](https://img.shields.io/badge/react-%23282C34.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)  
-![MongoDB](https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
-![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)  
-![Express.js](https://img.shields.io/badge/express.js-%23404D59.svg?style=for-the-badge&logo=express&logoColor=white)  
-![Chakra UI](https://img.shields.io/badge/chakra_ui-%2338B2AC.svg?style=for-the-badge&logo=chakra-ui&logoColor=white)  
-![Git](https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)  
+![React](https://img.shields.io/badge/react-%23282C34.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase&logoColor=white)  ![MongoDB](https://img.shields.io/badge/mongodb-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  ![Node.js](https://img.shields.io/badge/node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)  ![Express.js](https://img.shields.io/badge/express.js-%23404D59.svg?style=for-the-badge&logo=express&logoColor=white)  ![Chakra UI](https://img.shields.io/badge/chakra_ui-%2338B2AC.svg?style=for-the-badge&logo=chakra-ui&logoColor=white)  ![Git](https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)  
 
 ---
 
@@ -30,6 +24,8 @@ Frontend | Fullstack
 
 ## Deployed App
 Frontend: [Smart Inventory](https://smart-inventory.netlify.app/)
+backend: [Smart Inventory](https://smart-inventory.netlify.app/)
+database:
 
 ## Video Walkthrough of the Project
 - 📹 [Project Demo](https://youtu.be/example1)
@@ -50,6 +46,7 @@ Frontend: [Smart Inventory](https://smart-inventory.netlify.app/)
 ---
 
 ## 📂 Folder Structure
+```
 Smart_Inventory/ 
 │── src/ 
 | ├── Assets/ 
@@ -65,7 +62,7 @@ Smart_Inventory/
 │── public/ # Static assets 
 │── package.json # Dependencies & scripts 
 │── README.md # Project documentation
-
+```
 
 ---
 
