@@ -24,6 +24,8 @@ Frontend | Fullstack
 
 ## Deployed App
 Frontend: [Smart Inventory](https://smart-inventory.netlify.app/)
+backend: [Smart Inventory](https://smart-inventory.netlify.app/)
+database:
 
 ## Video Walkthrough of the Project
 - 📹 [Project Demo](https://youtu.be/example1)
