@@ -23,8 +23,10 @@
 Fullstack
 
 ## Deployed App
-Frontend: [Smart Inventory](https://smartinventory1.netlify.app/)
-backend: [Smart Inventory](https://smartinventory-6edu.onrender.com)
+Frontend:(https://smartinventory1.netlify.app/)
+
+backend: (https://smartinventory-6edu.onrender.com)
+
 database:MongodbAtlas
 
 ## Video Walkthrough of the Project
