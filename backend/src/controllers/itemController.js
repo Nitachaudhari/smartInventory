@@ -24,8 +24,8 @@ const getItemById = async (req, res) => {
 // Create item
 const createItem = async (req, res) => {
   try {
-    const { name, category, quantity, expiryDate } = req.body;
-    const newItem = new Item({ name, category, quantity, expiryDate });
+    const { name, category, quantity, expiryDate,supplier,location,barcode,pricePerPiece } = req.body;
+    const newItem = new Item({ name, category, quantity, expiryDate,supplier,location,barcode,pricePerPiece  });
     await newItem.save();
     res.status(201).json(newItem);
   } catch (error) {
@@ -36,10 +36,10 @@ const createItem = async (req, res) => {
 // Update item
 const updateItem = async (req, res) => {
   try {
-    const { name, category, quantity, expiryDate } = req.body;
+    const { name, category, quantity, expiryDate,supplier,location,barcode,pricePerPiece  } = req.body;
     const updatedItem = await Item.findByIdAndUpdate(
       req.params.id,
-      { name, category, quantity, expiryDate },
+      { name, category, quantity, expiryDate,supplier,location,barcode,pricePerPiece  },
       { new: true }
     );
     if (!updatedItem) return res.status(404).json({ message: "Item not found" });

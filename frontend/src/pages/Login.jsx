@@ -13,6 +13,8 @@ import {
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
+import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const Auth = () => {
   const { setUser, setToken } = useContext(AuthContext);
@@ -63,6 +65,7 @@ const Auth = () => {
   };
 
   return (
+    <>
     <Container maxW="md" mt={10}>
       <Box
         p={6}
@@ -116,6 +119,8 @@ const Auth = () => {
         </VStack>
       </Box>
     </Container>
+    </>
+    
   );
 };
 

@@ -1,50 +1,96 @@
-import { Box, Button, Container, Flex, Heading, Stack, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+  SimpleGrid,
+  Icon,
+} from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { FaBoxOpen, FaChartBar, FaBell, FaCogs } from "react-icons/fa";
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <Box>
-      {/* Navbar */}
-      <Flex as="nav" bg="teal.500" color="white" px={8} py={4} justify="space-between" align="center">
-        <Heading size="md">Inventory Management</Heading>
-        <Stack direction="row" spacing={4}>
-          <Button colorScheme="whiteAlpha" variant="outline" onClick={() => navigate("/login")}>
-            Login
-          </Button>
-          <Button colorScheme="whiteAlpha" variant="outline" onClick={() => navigate("/dashboard")}>
-            Dashboard
-          </Button>
-          <Button colorScheme="whiteAlpha" variant="outline" onClick={() => navigate("/inventory")}>
-            Inventory
-          </Button>
-        </Stack>
-      </Flex>
-
       {/* Hero Section */}
-      <Container maxW="container.xl" py={16} textAlign="center">
-        <VStack spacing={6}>
-          <Heading size="2xl" color="teal.600">
-            Welcome to Inventory Management System
-          </Heading>
-          <Text fontSize="lg" color="gray.600" maxW="700px">
-            Streamline your inventory tracking and management with our intuitive platform. 
-            Manage your products, track stock levels, and generate reports effortlessly.
-          </Text>
+      <Box bg="teal.50" py={16} textAlign="center">
+        <Container maxW="container.lg">
+          <VStack spacing={6}>
+            <Heading size="2xl" color="teal.700">
+              Inventory Management System
+            </Heading>
+            <Text fontSize="lg" color="gray.600" maxW="700px">
+              Track stock levels, manage products, and streamline your inventory effortlessly.
+            </Text>
+            <Stack direction={["column", "row"]} spacing={4} mt={4}>
+              <Button colorScheme="teal" size="lg" onClick={() => navigate("/dashboard")}>
+                Go to Dashboard
+              </Button>
+              {/* <Button variant="outline" colorScheme="teal" size="lg" onClick={() => navigate("/about")}>
+                Learn More
+              </Button> */}
+            </Stack>
+          </VStack>
+        </Container>
+      </Box>
 
-          {/* Action Buttons */}
-          <Stack direction={["column", "row"]} spacing={4} mt={4}>
-            <Button colorScheme="teal" size="lg" onClick={() => navigate("/login")}>
-              Get Started
-            </Button>
-            <Button colorScheme="green" size="lg" onClick={() => navigate("/dashboard")}>
-              Go to Dashboard
-            </Button>
-          </Stack>
-        </VStack>
+      {/* Features Section */}
+      <Container maxW="container.lg" py={16}>
+        <Heading size="xl" textAlign="center" mb={8} color="gray.700">
+          Key Features
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} spacing={10}>
+          <FeatureCard
+            icon={FaBoxOpen}
+            title="Stock Management"
+            description="Keep track of your product stock levels in real time."
+          />
+          <FeatureCard
+            icon={FaChartBar}
+            title="Reports & Insights"
+            description="Generate detailed reports to analyze stock trends and performance."
+          />
+          <FeatureCard
+            icon={FaBell}
+            title="Low Stock Alerts"
+            description="Get notified when stock levels drop below the threshold."
+          />
+          <FeatureCard
+            icon={FaCogs}
+            title="Easy Integration"
+            description="Seamlessly integrate with your existing business workflow."
+          />
+        </SimpleGrid>
       </Container>
     </Box>
+  );
+};
+
+// Feature Card Component
+const FeatureCard = ({ icon, title, description }) => {
+  return (
+    <VStack
+      p={6}
+      borderRadius="lg"
+      shadow="md"
+      bg="white"
+      align="center"
+      spacing={3}
+      _hover={{ shadow: "lg", transform: "scale(1.05)", transition: "0.3s" }}
+    >
+      <Icon as={icon} boxSize={10} color="teal.500" />
+      <Heading size="md" color="gray.800">
+        {title}
+      </Heading>
+      <Text textAlign="center" color="gray.600">
+        {description}
+      </Text>
+    </VStack>
   );
 };
 
