@@ -30,12 +30,8 @@ backend: (https://smartinventory-6edu.onrender.com)
 database:MongodbAtlas
 
 ## Video Walkthrough of the Project
-- 📹 [Project Demo](https://youtu.be/example1)
+- 📹 [Project Demo](https://youtu.be/H1ZmPQc9eLQ)
 
-## Video Walkthrough of the Codebase
-- 📹 [Codebase Overview](https://youtu.be/example2)
-
----
 
 ## 📸 Project Screenshots  
 ![Home](image.png)
