@@ -1,5 +1,5 @@
 export const fetchReportData = async (type) => {
-    const response = await fetch(`http://localhost:5000/api/reports/${type}`);
-    return response.json();
-  };
-  
+  const BASE_URL = import.meta.env.VITE_BACKEND_URL; // Use environment variable
+  const response = await fetch(`${BASE_URL}/reports/${type}`);
+  return response.json();
+};

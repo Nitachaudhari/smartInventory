@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api";
+// Use environment variable for the backend URL
+const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 // Common function to handle requests with optional headers (for authentication)
 const request = async (method, url, data = null, token = null) => {
