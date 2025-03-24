@@ -20,12 +20,12 @@
 ---
 
 ## Project Type
-Frontend | Fullstack
+Fullstack
 
 ## Deployed App
-Frontend: [Smart Inventory](https://smart-inventory.netlify.app/)
-backend: [Smart Inventory](https://smart-inventory.netlify.app/)
-database:
+Frontend: [Smart Inventory](https://smartinventory1.netlify.app/)
+backend: [Smart Inventory](https://smartinventory-6edu.onrender.com)
+database:MongodbAtlas
 
 ## Video Walkthrough of the Project
 - 📹 [Project Demo](https://youtu.be/example1)
