@@ -62,7 +62,7 @@ Smart_Inventory/
 │── public/ # Static assets 
 │── package.json # Dependencies & scripts 
 │── README.md # Project documentation
-
+```
 
 ---
 
